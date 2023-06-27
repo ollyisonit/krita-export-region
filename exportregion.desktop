@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=myplugin
+X-Python-2-Compatible=false
+Name=Export Region
+Comment=Adds "Export Region" option to file menu that allows you to export a selected region of your document
