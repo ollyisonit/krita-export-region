@@ -10,7 +10,7 @@ class ExportRegionExtension(Extension):
 
     # If part of the document is selected, export the selection.
     # If nothing is selected, export everything in the current layer's bounding box.
-    def export_region():
+    def export_region(self):
         if not Krita.instance().activeDocument():
             return
 
@@ -40,4 +40,7 @@ class ExportRegionExtension(Extension):
         export_region_action = window.createAction(
             "dninosores_export_region", "Export Region...", "file"
         )
-        export_region_action.triggered.connect(self.export_region())
+        export_region_action.triggered.connect(self.export_region)
+
+
+Krita.instance().addExtension(ExportRegionExtension(Krita.instance()))
