@@ -4,7 +4,7 @@ Adds an "Export Region..." option to the file menu that allows you to only expor
 ## Examples
 Running "Export Region..." with an area selected will export an image cropped to the selected area. For example, the following selection:
 
-![image](./resources/face-selected.png)
+![image](./resources/face-selected.PNG)
 
 Would export this:
 
