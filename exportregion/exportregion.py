@@ -55,7 +55,7 @@ class ExportRegionExtension(Extension):
         if file_menu_action:
             file_menu = file_menu_action.menu()
             for file_action in file_menu.actions():
-                if file_action.objectName() == "file_export_file":
+                if file_action.objectName() == "file_export_advanced":
                     file_menu.removeAction(action)
                     file_menu.insertAction(file_action, action)
 
