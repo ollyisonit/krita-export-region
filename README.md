@@ -20,6 +20,6 @@ Then the exported image would be this:
 
 ## Installation
 
-[Download krita-export-region.zip](https://github.com/dninosores/krita-export-region/releases/latest) and install by going to `Tools > Scripts > Import Python Plugin From File...` in Krita and selecting the zip file. Once the plugin is installed, you can manage shortcuts in the shortcuts menu under `Scripts > Export Region`. 
+Download [krita-export-region.zip](http://github.com/dninosores/krita-export-region/releases/latest/download/krita-export-region.zip) and install by going to `Tools > Scripts > Import Python Plugin From File...` in Krita and selecting the zip file. Once the plugin is installed, you can manage shortcuts in the shortcuts menu under `Scripts > Export Region`. 
 
 If you're having issues, more information on plugin installation can be found [here](https://docs.krita.org/en/user_manual/python_scripting/install_custom_python_plugin.html).
