@@ -1,6 +1,10 @@
 # Krita Export Region
+
+![](icon.jpg)
+
 Adds an "Export Region..." option to the file menu that allows you to only export the contents of a selected region. If no region is selected, then it will crop the image to fit the bounds of the currently selected layer.
 
+## Demo
 ![image](resources/ExportRegionDemo.gif)
 
 ## Examples
