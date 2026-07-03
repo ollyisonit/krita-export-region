@@ -80,19 +80,24 @@ class ExportRegionExtension(Extension):
 
         export_doc.setSelection(export_doc_selection)
         export_doc.setActiveNode(newNode)
-        Krita.instance().action("clear").trigger()
+        export_doc_selection.cut(newNode)
 
         export_doc.refreshProjection()
         export_doc.waitForDone()
 
         # Export
         Krita.instance().action("file_export_file").trigger()
-        export_doc.setModified(False)
-        Krita.instance().setActiveDocument(doc)
-        export_doc.close()
+        
+        def cleanup():
+            export_doc.setModified(False)
+            export_doc.close()
+            Krita.instance().setActiveDocument(doc)
+            if crop_to_layer_mode:
+                Krita.instance().action("deselect").trigger()
 
-        if crop_to_layer_mode:
-            Krita.instance().action("deselect").trigger()
+        QTimer.singleShot(0, cleanup)
+
+
 
     def setup(self):
         pass
