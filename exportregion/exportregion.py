@@ -76,10 +76,10 @@ class ExportRegionExtension(Extension):
         export_doc_selection.setPixelData(selection_pixeldata, 0, 0,
                                           selection.width(),
                                           selection.height())
+        export_doc_selection.invert()
 
         export_doc.setSelection(export_doc_selection)
         export_doc.setActiveNode(newNode)
-        Krita.instance().action("invert_selection").trigger()
         Krita.instance().action("clear").trigger()
 
         export_doc.refreshProjection()
