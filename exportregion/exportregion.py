@@ -1,6 +1,6 @@
 # type: ignore
 from krita import *
-from PyQt5.QtWidgets import QWidget, QAction
+from .qtpy.qtpy.QtCore import QTimer
 from pprint import pprint
 from functools import partial
 

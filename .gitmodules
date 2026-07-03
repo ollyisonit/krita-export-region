@@ -1,0 +1,3 @@
+[submodule "exportregion/qtpy"]
+	path = exportregion/qtpy
+	url = https://github.com/spyder-ide/qtpy.git
